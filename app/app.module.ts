@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SurveyjsComponent } from './surveyjs.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
