@@ -518,7 +518,6 @@ export class SurveyjsComponent  {
  requiredText: "",
  firstPageIsStarted: true,
  showPreviewBeforeComplete: "showAnsweredQuestions",
- maxTimeToFinishPage: 10000,
  showTimerPanel: "top",
  showTimerPanelMode: "page"
 };
