@@ -1,3 +1,85 @@
 p {
   font-family: Lato;
 }
+
+.container{
+  background:#c6c0c0;
+  border:solid;
+  border-color:#424e95;
+  
+  
+  
+  width:50%;
+  display:table;
+  border-radius:25px;
+}
+#time{
+  background:white;
+  border:solid;
+  font-size:27px;
+  border-radius:15px;
+  border-color:#424e95;
+  padding:5px;
+  
+}
+#time1{
+  background:white;
+  border:solid;
+  font-size: 27px;
+  border-radius:15px;
+  padding:5px;
+  border-color:#424e95;
+}
+#startTimer{
+ background-color: #4CAF50; /* Green */
+  border: none;
+  height:100px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#stopTimer{
+ background-color: red; /* Green */
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50%;
+  height:100px;
+}
+ #startTimer{
+ background-color:  #4CAF50; /* Green */
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+   height:100px;
+}
+
+#resetTimer{
+ background-color: yellow; /* Green */
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  height:100px;
+}

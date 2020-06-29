@@ -1,4 +1,13 @@
-<hello name="{{ name }}"></hello>
-<p>
+
   <surveyjs-component></surveyjs-component>
-</p>
+  
+ <div class="container">
+   Time (Countup)
+        <input type="button" id="startTimer" value="Start Timer" onclick="start();">
+        <input type="button" id="stopTimer" value="Stop Timer"  onclick="stop();">
+        <input type="button" id="resetTimer" value="Reset Timer"  onclick="reset();">
+        <span id="time">00:00</span>
+      </div>
+  <br>
+   
+   
