@@ -7,6 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'SurveyJS and Angular 5';
+  time: number = 0;
+interval;
+
+start() {
+  this.play = true;
+  this.interval = setInterval(() => {
+    this.time++;
+  },1000)
+}
+
+stop() {
+  this.play = false;
+  clearInterval(this.interval);
+}
+reset(){
+  this.play=false;
+  clearInterval(this.interval);
+  this.time=0;
+}
+  
 }
 
             var timeElapsed = 0;

@@ -12,7 +12,6 @@ export class SurveyjsComponent  {
   ngOnInit() {
         var json = {
  title: "Berg Balance Test",
- description: "Sitting With Back Unsupported But Feet Supported On Floor Or On A Stool",
  completedHtml: "<h3>Thank you for answering the survey</h3>",
  pages: [
   {
@@ -20,13 +19,11 @@ export class SurveyjsComponent  {
    elements: [
     {
      type: "html",
-     name: "question16",
-     html: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  \n  <!--  Meta  -->\n  <meta charset=\"UTF-8\" />\n  <title>Timer</title>\n  \n  <!--  Styles  -->\n  <link rel=\"stylesheet\" href=\"styles/index.processed.css\">\n</head>\n<body>\n <div class=\"container\">\n   Time (Countup)\n        <input type=\"button\" id=\"startTimer\" value=\"Start Timer\" onclick=\"start();\">\n        <input type=\"button\" id=\"stopTimer\" value=\"Stop Timer\"  onclick=\"stop();\">\n        <input type=\"button\" id=\"resetTimer\" value=\"Reset Timer\"  onclick=\"reset();\">\n        <span id=\"time\">00:00</span>\n      </div>\n  <br>\n   <div class=\"container\">\n     Time (Countdown)\n        <input type=\"button\" id=\"startTimer\" value=\"Start Timer\" onclick=\"start1();\">\n        <input type=\"button\" id=\"stopTimer\" value=\"Stop Timer\"  onclick=\"stop1();\">\n        <input type=\"button\" id=\"resetTimer\" value=\"Reset Timer\"  onclick=\"reset1();\">\n       <span id=\"time1\">03:00</span>\n  </div>\n        <script>\n            var timeElapsed = 0;\n            var timerID = -1;\n            var timeElapsed1=180;\n            var timerID1 = -1;\n            function tick() {\n                timeElapsed++\n                const sec = parseInt(timeElapsed, 10); // convert value to number if it's string\n                let minutes = Math.floor(sec / 60); // get minutes\n                let seconds = sec - (minutes * 60); //  get seconds\n    // add 0 if value < 10\n                if (minutes < 10) {minutes = \"0\"+minutes;}\n                if (seconds < 10) {seconds = \"0\"+seconds;}\n      \n                document.getElementById(\"time\").innerHTML = minutes+':'+seconds;\n            }\n\n            function start() {\n                if(timerID == -1){\n                    timerID = setInterval(tick, 1000);\n                }\n            }\n\n            function stop() {\n                if(timerID != -1){\n                    clearInterval(timerID)\n                    timerID = -1\n                } \n                \n            }\n\n            function reset() {\n                stop();\n                timeElapsed = -1;\n                tick();\n            }\n               function tick1() {\n                timeElapsed1--\n                const sec1 = parseInt(timeElapsed1, 10); // convert value to number if it's string\n                let minutes1 = Math.floor(sec1 / 60); // get minutes\n                let seconds1 = sec1 - (minutes1 * 60); //  get seconds\n    // add 0 if value < 10\n                if (minutes1 < 10) {minutes1 = \"0\"+minutes1;}\n                if (seconds1 < 10) {seconds1 = \"0\"+seconds1;}\n      \n               \n                if (document.getElementById(\"time1\").innerHTML=='00:00') {document.getElementById(\"time1\").innerHTML='Done';}\n                if (document.getElementById(\"time1\").innerHTML=='Done'){return;}\n                document.getElementById(\"time1\").innerHTML = minutes1+':'+seconds1; \n            }\n\n            function start1() {\n                if(timerID1 == -1){\n                    timerID1 = setInterval(tick1, 1000);\n                }\n            }\n\n            function stop1() {\n                if(timerID1 != -1){\n                    clearInterval(timerID1)\n                    timerID1 = -1\n                } \n                \n            }\n\n            function reset1() {\n                stop1();\n                if (document.getElementById(\"time1\").innerHTML=='Done'){document.getElementById(\"time1\").innerHTML='03:00';}\n                timeElapsed1=181;\n                tick1();\n            }\n          </script>\n</body>\n  \n</html>"
+     name: "question14",
+     html: "<p>Please demonstrate each task and/or give instructions as written. When scoring, please record the lowest response category that applies for each item.In most items, the subject is asked to maintain a given position for a specific time. Progressively more points are deducted if the time or distance requirements are not met, if the subject's performance warrants supervision, or if the subject touches an external support or receives assistance from the examiner. Subjects should understand that they must maintain their balance while attempting the tasks. The choices of which leg to stand on or how far to reach are left to the subject. Poor judgment will adversely influence the performance and the scoring.Equipment required for testing are a stopwatch or watch with a second hand, and a ruler or otherindicator of 2, 5 and 10 inches (5, 12 and 25 cm). Chairs used during testing should be of reasonable height. Either a step or a stool (of average step height) may be used for item #12. Please use the timer on the top to answer the questions.</p>"
     }
    ],
-   visible: false,
-   title: "Rules of the survey",
-   description: "Please demonstrate each task and/or give instructions as written. When scoring, please record the lowest response category that applies for each item.In most items, the subject is asked to maintain a given position for a specific time. Progressively more points are deducted if the time or distance requirements are not met, if the subject's performance warrants supervision, or if the subject touches an external support or receives assistance from the examiner.  Subjects should understand that they must maintain their balance while attempting the tasks.  The choices of which leg to stand on or how far to reach are left to the subject.  Poor judgment will adversely influence the performance and the scoring.Equipment required for testing are a stopwatch or watch with a second hand, and a ruler or otherindicator of 2, 5 and 10 inches (5, 12 and 25 cm).  Chairs used during testing should be of reasonable height.  Either a step or a stool (of average step height) may be used for item #12. Please use the timer on the top to answer the questions."
+   title: "Rules of the survey"
   },
   {
    name: "pa",
@@ -34,7 +31,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question2",
-     title: "Sitting While Standing Up",
+     title: "INSTRUCTIONS: Please stand up. Try not to use your hands for support.",
      isRequired: true,
      choices: [
       {
@@ -64,6 +61,7 @@ export class SurveyjsComponent  {
      name: "panel1"
     }
    ],
+   title: "Sitting While Standing Up",
    description: "INSTRUCTIONS: Please stand up. Try not to use your hands for support.",
    questionsOrder: "initial"
   },
@@ -73,6 +71,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "Standing Unsupported",
+     title: "INSTRUCTIONS: Please stand for two minutes without holding.",
      isRequired: true,
      choices: [
       {
@@ -98,6 +97,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Standing Unsupported",
    description: "NSTRUCTIONS: Please stand for two minutes without holding."
   },
   {
@@ -106,7 +106,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question1",
-     title: "Sitting With Back Unsupported But Feet Supported On Floor Or On A Stool",
+     title: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4",
      isRequired: true,
      choices: [
       {
@@ -132,6 +132,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Sitting With Back Unsupported But Feet Supported On Floor Or On A Stool",
    description: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4."
   },
   {
@@ -167,7 +168,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question3",
-     title: "Standing to Sitting",
+     title: "INSTRUCTIONS: Please sit down.",
      isRequired: true,
      choices: [
       {
@@ -180,11 +181,11 @@ export class SurveyjsComponent  {
       },
       {
        value: "2",
-       text: "uses back of legs against chair to control descent.)"
+       text: "2 (uses back of legs against chair to control descent.)"
       },
       {
        value: "3",
-       text: "3 ( controls descent by using hands.)"
+       text: "3 (controls descent by using hands.)"
       },
       {
        value: "4",
@@ -193,6 +194,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Standing to Sitting",
    description: "INSTRUCTIONS: Please sit down."
   },
   {
@@ -201,7 +203,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question4",
-     title: "Transfers",
+     title: "INSTRUCTIONS: Arrange chairs(s) for a pivot transfer. Ask subject to transfer one way toward aseat with armrests and one way toward a seat without armrests. You may use two chairs (one with and one without armrests) or a bed and a chair.",
      choices: [
       {
        value: "0",
@@ -226,6 +228,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Transfers",
    description: "INSTRUCTIONS: Arrange chairs(s) for a pivot transfer. Ask subject to transfer one way toward aseat with armrests and one way toward a seat without armrests. You may use two chairs (one with and one without armrests) or a bed and a chair."
   },
   {
@@ -234,7 +237,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question15",
-     title: "Standing Unsupported With Eyes Closed",
+     title: "INSTRUCTIONS: Please close your eyes and stand still for 10 seconds.",
      isRequired: true,
      choices: [
       {
@@ -260,6 +263,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Standing Unsupported With Eyes Closed",
    description: "INSTRUCTIONS: Please close your eyes and stand still for 10 seconds."
   },
   {
@@ -268,7 +272,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question6",
-     title: "Standing Unsupported With Feet Together",
+     title: "INSTRUCTIONS: Place your feet together and stand without holding.",
      isRequired: true,
      choices: [
       {
@@ -294,10 +298,18 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Standing Unsupported With Feet Together",
    description: "INSTRUCTIONS: Place your feet together and stand without holding."
   },
   {
    name: "page2",
+   elements: [
+    {
+     type: "html",
+     name: "question16",
+     html: "<p>THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n<img src=\"https://www.w3schools.com/images/w3schools_green.jpg\" alt=\"W3Schools.com\" style=\"width:104px;height:142px;\">"
+    }
+   ],
    description: "THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED."
   },
   {
@@ -306,7 +318,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question7",
-     title: "Reaching Forward With Outstretched Arm While Standing",
+     title: "INSTRUCTIONS: Lift arm to 90 degrees. Stretch out your fingers and reach forward as far as you can. (Examiner places a ruler at end of fingertips when arm is at 90 degrees. Fingers should nottouch the ruler while reaching forward. The recorded measure is the distance forward that thefinger reaches while the subject is in the most forward lean position. When possible, ask subject to use both arms when reaching to avoid rotation of the trunk).",
      isRequired: true,
      choices: [
       {
@@ -332,6 +344,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Reaching Forward With Outstretched Arm While Standing",
    description: "INSTRUCTIONS: Lift arm to 90 degrees. Stretch out your fingers and reach forward as far as youcan. (Examiner places a ruler at end of fingertips when arm is at 90 degrees. Fingers should nottouch the ruler while reaching forward. The recorded measure is the distance forward that thefinger reaches while the subject is in the most forward lean position. When possible, ask subject to use both arms when reaching to avoid rotation of the trunk)."
   },
   {
@@ -340,7 +353,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question5",
-     title: "Pick Up Object From The Floor From A Standing Position",
+     title: "INSTRUCTIONS: Pick up the shoe/slipper which is placed in front of your feet.",
      isRequired: true,
      choices: [
       {
@@ -366,6 +379,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Pick Up Object From The Floor From A Standing Position",
    description: "INSTRUCTIONS: Pick up the shoe/slipper which is placed in front of your feet."
   },
   {
@@ -374,7 +388,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question8",
-     title: "Turning to Look Behind Over Left and Right Shoulders While Standing",
+     title: "INSTRUCTIONS: Turn to look directly behind you over toward left shoulder. Repeat to the right. Examiner may pick an object to look at directly behind the subject to encourage a better twist turn.",
      isRequired: true,
      choices: [
       {
@@ -400,6 +414,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Turning to Look Behind Over Left and Right Shoulders While Standing",
    description: "INSTRUCTIONS: Turn to look directly behind you over toward left shoulder. Repeat to the right.Examiner may pick an object to look at directly behind the subject to encourage a better twist turn."
   },
   {
@@ -408,7 +423,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question9",
-     title: "Turn 360 Degrees",
+     title: "INSTRUCTIONS: Turn completely around in a full circle. Pause. Then turn a full circle in the other direction.",
      isRequired: true,
      choices: [
       {
@@ -434,6 +449,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Turn 360 Degrees",
    description: "INSTRUCTIONS: Turn completely around in a full circle. Pause. Then turn a full circle in the other direction."
   },
   {
@@ -442,7 +458,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question10",
-     title: "Count number of times step touch measured stool",
+     title: "INSTRUCTIONS: Place each foot alternately on the step/stool. Continue until each foot has touched the step/stool four times.",
      isRequired: true,
      choices: [
       {
@@ -468,6 +484,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Count number of times step touch measured stool",
    description: "INSTRUCTIONS: Place each foot alternately on the step/stool. Continue until each foot has touched the step/stool four times."
   },
   {
@@ -476,7 +493,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question11",
-     title: "Standing Unsupported One Feet In Front",
+     title: "INSTRUCTIONS: (DEMONSTRATE TO SUBJECT) Place one foot directly in front of the other. If you feel that you cannot place your foot directly in front, try to step far enough ahead that the heel of your forward foot is ahead of the toes of the other foot. (To score 3 points, the length of the stepshould exceed the length of the other foot and the width of the stance should approximate the subject's normal stride width).",
      isRequired: true,
      choices: [
       {
@@ -502,6 +519,7 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Standing Unsupported One Feet In Front",
    description: "INSTRUCTIONS: (DEMONSTRATE TO SUBJECT) Place one foot directly in front of the other. If you feel that you cannot place your foot directly in front, try to step far enough ahead that the heel of your forward foot is ahead of the toes of the other foot. (To score 3 points, the length of the stepshould exceed the length of the other foot and the width of the stance should approximate the subject's normal stride width)."
   },
   {
@@ -510,7 +528,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question12",
-     title: "Standing On One Leg",
+     title: "INSTRUCTIONS: Stand on one leg as long as you can without holding.",
      isRequired: true,
      choices: [
       {
@@ -536,10 +554,15 @@ export class SurveyjsComponent  {
      ]
     }
    ],
+   title: "Standing On One Leg",
    description: "INSTRUCTIONS: Stand on one leg as long as you can without holding."
+  },
+  {
+   name: "page16"
   }
  ],
  showPageNumbers: true,
+ showQuestionNumbers: "off",
  showProgressBar: "top",
  clearInvisibleValues: "none",
  requiredText: "",

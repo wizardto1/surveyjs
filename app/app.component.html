@@ -3,10 +3,11 @@
   
  <div class="container">
    Time (Countup):
-        <input type="button" id="startTimer" value="Start Timer" onclick="start();">
-        <input type="button" id="stopTimer" value="Stop Timer"  onclick="stop();">
-        <input type="button" id="resetTimer" value="Reset Timer"  onclick="reset();">
-        <span id="time">00:00</span>
+        
+        <button id="startTimer" (click)='start()'>Start Timer</button>
+        <button id="stopTimer" (click)='stop()'>Stop Timer</button>
+        <button id="resetTimer" (click)='reset()'>Reset Timer</button>
+        <p id="time">{{time}} seconds</p>
       </div>
   <br>
    
