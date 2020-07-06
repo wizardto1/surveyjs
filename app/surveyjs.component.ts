@@ -136,33 +136,6 @@ export class SurveyjsComponent  {
    description: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4."
   },
   {
-   name: "page3",
-   elements: [
-    {
-     type: "imagepicker",
-     name: "question13",
-     choices: [
-      {
-       value: "lion",
-       imageLink: "/api/MySurveys/files?name=b4aa2f4d-7410-4909-94ec-1f723213592d"
-      },
-      {
-       value: "giraffe",
-       imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"
-      },
-      {
-       value: "panda",
-       imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"
-      },
-      {
-       value: "camel",
-       imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  {
    name: "page5",
    elements: [
     {
@@ -181,11 +154,11 @@ export class SurveyjsComponent  {
       },
       {
        value: "2",
-       text: "2 (uses back of legs against chair to control descent.)"
+       text: "uses back of legs against chair to control descent.)"
       },
       {
        value: "3",
-       text: "3 (controls descent by using hands.)"
+       text: "3 ( controls descent by using hands.)"
       },
       {
        value: "4",
