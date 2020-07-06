@@ -16,7 +16,7 @@ p {
 #time{
   background:white;
   border:solid;
-  font-size:27px;
+  font-size:25px;
   border-radius:15px;
   border-color:#424e95;
   padding:5px;
@@ -25,24 +25,12 @@ p {
 #time1{
   background:white;
   border:solid;
-  font-size: 27px;
+  font-size: 25px;
   border-radius:15px;
   padding:5px;
   border-color:#424e95;
 }
-#startTimer{
- background-color: #4CAF50; /* Green */
-  border: none;
-  height:100px;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
-}
+
 #stopTimer{
  background-color: red; /* Green */
   border: none;
@@ -50,7 +38,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius:50%;
@@ -63,7 +51,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
@@ -77,7 +65,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
