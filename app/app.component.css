@@ -10,26 +10,24 @@ p {
   background:#c6c0c0;
   border:solid;
   border-color:#424e95;
-  width:60%;
+  width:50%;
   display:table;
   border-radius:25px;
+  position:fixed;
+  margin:auto;
+  padding: 10px;
+  bottom:20vh;
+  right:30vh;
+
 }
 #time{
   background:white;
   border:solid;
   font-size:25px;
-  border-radius:15px;
+  border-radius:10px;
   border-color:#424e95;
   padding:5px;
   
-}
-#time1{
-  background:white;
-  border:solid;
-  font-size: 25px;
-  border-radius:15px;
-  padding:5px;
-  border-color:#424e95;
 }
 
 #stopTimer{
