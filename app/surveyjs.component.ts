@@ -71,7 +71,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "Standing Unsupported",
-     title: "INSTRUCTIONS: Please stand for two minutes without holding.",
+     title: "INSTRUCTIONS: Please stand for two minutes without holding. Start timer when ready.",
      isRequired: true,
      choices: [
       {
@@ -106,7 +106,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question1",
-     title: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4",
+     title: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4. Start timer when ready",
      isRequired: true,
      choices: [
       {
@@ -133,7 +133,7 @@ export class SurveyjsComponent  {
     }
    ],
    title: "Sitting With Back Unsupported But Feet Supported On Floor Or On A Stool",
-   description: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4."
+   description: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4. Start timer when ready"
   },
   {
    name: "page5",

@@ -10,6 +10,7 @@ export class AppComponent  {
   time: number = 0;
 interval;
 
+
 start() {
   this.play = true;
   this.interval = setInterval(() => {
