@@ -280,7 +280,7 @@ export class SurveyjsComponent  {
     {
      type: "html",
      name: "question16",
-     html: "<p>THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n<img src=\"https://www.w3schools.com/images/w3schools_green.jpg\" alt=\"W3Schools.com\" style=\"width:104px;height:142px;\">"
+     html: "<p>THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n<img src=\"https://clipartart.com/images/person-standing-clipart-4.jpg\" alt=\"W3Schools.com\" style=\"width:153px;height:142px;\">"
     }
    ],
    description: "THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED."
