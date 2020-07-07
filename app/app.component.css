@@ -1,8 +1,8 @@
 p {
   font-family: Lato;
 }
-.survey{
-  margin:25px;
+#survey{
+  padding:35px;
 
 }
 
@@ -10,28 +10,44 @@ p {
   background:#c6c0c0;
   border:solid;
   border-color:#424e95;
-  width:50%;
+  width:50vh;
   display:table;
   border-radius:25px;
   
   margin:auto;
-  padding: 10px;
   
+  align-content:center;
+  text-align:center;
   
 
 }
 #time{
   background:white;
   border:solid;
-  font-size:25px;
+  font-size:20px;
   border-radius:10px;
   border-color:#424e95;
   padding:5px;
+  margin:10px 2px;
   
 }
 
 #stopTimer{
  background-color: red; /* Green */
+  border: none;
+  padding:15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius:50%;
+  height:10vh;
+  
+}
+ #startTimer{
+ background-color:  #4CAF50; /* Green */
   border: none;
   padding: 15px;
   text-align: center;
@@ -40,27 +56,15 @@ p {
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius:50%;
-  height:100px;
-}
- #startTimer{
- background-color:  #4CAF50; /* Green */
-  border: none;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
   border-radius: 50%;
-   height:100px;
+   height:10vh;
+   margin:auto;
 }
 
 #resetTimer{
  background-color: yellow; /* Green */
   border: none;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -68,5 +72,6 @@ p {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
-  height:100px;
+  height:10vh;
+  margin:auto;
 }
