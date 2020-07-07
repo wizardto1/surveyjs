@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   name = 'SurveyJS and Angular 5';
   time: number = 0;
+  
 interval;
 
 

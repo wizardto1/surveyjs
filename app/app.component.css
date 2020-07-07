@@ -1,15 +1,16 @@
 p {
   font-family: Lato;
 }
+.survey{
+  padding:25px;
+
+}
 
 .container{
   background:#c6c0c0;
   border:solid;
   border-color:#424e95;
-  
-  
-  
-  width:50%;
+  width:60%;
   display:table;
   border-radius:25px;
 }
