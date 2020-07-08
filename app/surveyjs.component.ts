@@ -11,7 +11,7 @@ export class SurveyjsComponent  {
 
   ngOnInit() {
         var json = {
- title: "Berg Balance Test",
+ //title: "Berg Balance Test",
  completedHtml: "<h3>Thank you for answering the survey</h3>",
  pages: [
   {
