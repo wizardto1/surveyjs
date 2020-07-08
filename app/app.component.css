@@ -11,11 +11,10 @@ p {
   border:solid;
   border-color:#424e95;
   width:50vw;
+  height:20vh;
   display:table;
   border-radius:25px;
-  
   margin:auto;
-
   align-content:center;
   text-align:center;
   
@@ -29,6 +28,8 @@ p {
   border-color:#424e95;
   padding:5px;
   margin:10px 2px;
+  height:20vh;
+  width:10vw;
   
   
 }
@@ -40,11 +41,11 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 5px 2px;
   cursor: pointer;
   border-radius:50%;
-  height:10vh;
+  height:15vh;
   
 }
  #startTimer{
@@ -54,11 +55,11 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
-   height:10vh;
+   height:15vh;
    margin:auto;
 }
 
@@ -69,10 +70,10 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50%;
-  height:10vh;
+  height:15vh;
   margin:auto;
 }
