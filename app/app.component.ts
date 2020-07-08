@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'SurveyJS and Angular 5';
+  
   time: number = 0;
+  minute: number = 0;
+  second: number = 0;
   
 interval;
 
