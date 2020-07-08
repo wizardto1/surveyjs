@@ -46,8 +46,8 @@ reset(){
   this.play=false;
   clearInterval(this.interval);
   this.time=0;
-  this.second=0;
-  this.minute=0;
+  this.seconds=0;
+  this.minutes=0;
 }
   
 }
