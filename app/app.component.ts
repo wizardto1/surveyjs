@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   
   time: number = 0;
-  minute: number = 0;
-  second: number = 0;
+  minutes:number=  0;
+  seconds:number= 0;
   
 interval;
 
@@ -18,6 +18,23 @@ start() {
   this.play = true;
   this.interval = setInterval(() => {
     this.time++;
+    
+        this.minutes = Math.floor(this.time / 60);
+        console.log(this.minutes)-(this.minutes * 60)
+        this.seconds = this.time-(this.minutes * 60)
+        console.log(this.seconds)
+        /** 
+        if (Number(this.minutes) < 10) {
+          this.minutes = '0' + this.minutes;
+        } else {
+          this.minutes = '' + this.minutes;
+        }
+        if (Number(this.seconds) < 10) {
+          this.seconds = '0' + this.seconds;
+        } else {
+          this.seconds = '' + this.seconds;
+        }*/
+        
   },1000)
 }
 
@@ -29,6 +46,8 @@ reset(){
   this.play=false;
   clearInterval(this.interval);
   this.time=0;
+  this.second=0;
+  this.minute=0;
 }
   
 }
