@@ -30,6 +30,19 @@ p {
   text-align:center;
 
 }
+#labelTimer{
+  border-radius: 2vw;
+  border-color:#000000;
+  text-align: center;
+  font-size:2.5vh;
+  font-weight: bold;
+  display: inline-block;
+  padding:0vw;
+  margin: 0vh 0vw 0vh 0vw;
+  height: 2vh;
+  width: 100vw;
+  cursor: pointer;
+}
 
 .container{
   background:#c6c0c0;

@@ -11,7 +11,7 @@ export class SurveyjsComponent  {
 
   ngOnInit() {
         var json = {
- //title: "Berg Balance Test",
+ title: "Berg Balance Test",
  completedHtml: "<h3>Thank you for answering the survey</h3>",
  pages: [
   {
@@ -29,9 +29,23 @@ export class SurveyjsComponent  {
    name: "pa",
    elements: [
     {
+     type: "html",
+     name: "question13"
+    },
+    {
+     type: "html",
+     name: "question18",
+     html: "<p>INSTRUCTIONS: Please stand up. Try not to use your hands for support.</p>"
+    },
+    {
+     type: "html",
+     name: "question17",
+     html: "\n<img src=\"https://thumbs.gfycat.com/BareSpanishBovine-size_restricted.gif\" style=\"height:20vh; display: block;\n  margin-left: auto;\n  margin-right: auto;\" >"
+    },
+    {
      type: "radiogroup",
      name: "question2",
-     title: "INSTRUCTIONS: Please stand up. Try not to use your hands for support.",
+     indent: 1,
      isRequired: true,
      choices: [
       {
@@ -62,7 +76,6 @@ export class SurveyjsComponent  {
     }
    ],
    title: "Sitting While Standing Up",
-   description: "INSTRUCTIONS: Please stand up. Try not to use your hands for support.",
    questionsOrder: "initial"
   },
   {
@@ -71,7 +84,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "Standing Unsupported",
-     title: "INSTRUCTIONS: Please stand for two minutes without holding. Start timer when ready.",
+     title: "INSTRUCTIONS: Please stand for two minutes without holding.",
      isRequired: true,
      choices: [
       {
@@ -106,7 +119,7 @@ export class SurveyjsComponent  {
     {
      type: "radiogroup",
      name: "question1",
-     title: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4. Start timer when ready",
+     title: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4",
      isRequired: true,
      choices: [
       {
@@ -133,7 +146,7 @@ export class SurveyjsComponent  {
     }
    ],
    title: "Sitting With Back Unsupported But Feet Supported On Floor Or On A Stool",
-   description: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4. Start timer when ready"
+   description: "INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4."
   },
   {
    name: "page5",
@@ -280,7 +293,7 @@ export class SurveyjsComponent  {
     {
      type: "html",
      name: "question16",
-     html: "<p>THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n<img src=\"https://clipartart.com/images/person-standing-clipart-4.jpg\" alt=\"W3Schools.com\" style=\"width:153px;height:142px;\">"
+     html: "<p>THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n<img src=\"https://www.w3schools.com/images/w3schools_green.jpg\" alt=\"W3Schools.com\" style=\"width:104px;height:142px;\">"
     }
    ],
    description: "THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED."
@@ -531,12 +544,35 @@ export class SurveyjsComponent  {
    description: "INSTRUCTIONS: Stand on one leg as long as you can without holding."
   },
   {
-   name: "page16"
+   name: "page16",
+   elements: [
+    {
+     type: "html",
+     name: "question19"
+    },
+    {
+     type: "multipletext",
+     name: "question20",
+     items: [
+      {
+       name: "text1"
+      },
+      {
+       name: "text2"
+      }
+     ]
+    }
+   ]
   }
  ],
+ calculatedValues: [
+  {
+   name: "var1"
+  }
+ ],
+ showTitle: false,
  showPageNumbers: true,
  showQuestionNumbers: "off",
- showProgressBar: "top",
  clearInvisibleValues: "none",
  requiredText: "",
  firstPageIsStarted: true,
