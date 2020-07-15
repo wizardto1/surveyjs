@@ -23,15 +23,12 @@ export class SurveyjsComponent  {
      html: "<ul><li>Please demonstrate each task and/or give instructions as written. When scoring, please record the lowest response category that applies for each item.</li><li>In most items, the subject is asked to maintain a given position for a specific time. Progressively more points are deducted if the time or distance requirements are not met, if the subject's performance warrants supervision, or if the subject touches an external support or receives assistance from the examiner. Subjects should understand that they must maintain their balance while attempting the tasks. The choices of which leg to stand on or how far to reach are left to the subject. Poor judgment will adversely influence the performance and the scoring.</li><li>Equipment required for testing are a stopwatch or watch with a second hand, and a ruler or otherindicator of 2, 5 and 10 inches (5, 12 and 25 cm). Chairs used during testing should be of reasonable height. Either a step or a stool (of average step height) may be used for item #12. Please use the timer on the top to answer the questions.</li></ul>"
     }
    ],
+   readOnly: true,
    title: "Rules of the survey"
   },
   {
    name: "pa",
    elements: [
-    {
-     type: "html",
-     name: "question13"
-    },
     {
      type: "html",
      name: "question18",
