@@ -20,7 +20,7 @@ export class SurveyjsComponent  {
     {
      type: "html",
      name: "question14",
-     html: "<p>Please demonstrate each task and/or give instructions as written. When scoring, please record the lowest response category that applies for each item.In most items, the subject is asked to maintain a given position for a specific time. Progressively more points are deducted if the time or distance requirements are not met, if the subject's performance warrants supervision, or if the subject touches an external support or receives assistance from the examiner. Subjects should understand that they must maintain their balance while attempting the tasks. The choices of which leg to stand on or how far to reach are left to the subject. Poor judgment will adversely influence the performance and the scoring.Equipment required for testing are a stopwatch or watch with a second hand, and a ruler or otherindicator of 2, 5 and 10 inches (5, 12 and 25 cm). Chairs used during testing should be of reasonable height. Either a step or a stool (of average step height) may be used for item #12. Please use the timer on the top to answer the questions.</p>"
+     html: "<ul><li>Please demonstrate each task and/or give instructions as written. When scoring, please record the lowest response category that applies for each item.</li><li>In most items, the subject is asked to maintain a given position for a specific time. Progressively more points are deducted if the time or distance requirements are not met, if the subject's performance warrants supervision, or if the subject touches an external support or receives assistance from the examiner. Subjects should understand that they must maintain their balance while attempting the tasks. The choices of which leg to stand on or how far to reach are left to the subject. Poor judgment will adversely influence the performance and the scoring.</li><li>Equipment required for testing are a stopwatch or watch with a second hand, and a ruler or otherindicator of 2, 5 and 10 inches (5, 12 and 25 cm). Chairs used during testing should be of reasonable height. Either a step or a stool (of average step height) may be used for item #12. Please use the timer on the top to answer the questions.</li></ul>"
     }
    ],
    title: "Rules of the survey"
@@ -138,7 +138,7 @@ export class SurveyjsComponent  {
     {
      type: "html",
      name: "question24",
-     html: "<img src=\"https://lh3.googleusercontent.com/proxy/jHK2FgXoH7bDoIFBbMKhS8n1SWM5qe4wFeUTlp8y9CfnTkOxXhAHw8id6TY2prtIex5C2Bnc88YVnVsJFZVshaLmipdJNjVhJpuy\" style=\"height:20vh; display: block;  margin-left: auto;  margin-right: auto;\">"
+     html: "<img src=\"https://lh3.googleusercontent.com/proxy/duSWG6-GiS2SJhqMSNWyND52IAWvgdu1Kxr0w0GBKHqlieA7CzW7TSYcYAFvqu9tAUXGV8-bNa-e2LTN-txD32FRF6Sfqz62jD3v\" style=\"height:20vh; display: block;  margin-left: auto;  margin-right: auto;\">"
     },
     {
      type: "radiogroup",
@@ -357,7 +357,7 @@ export class SurveyjsComponent  {
     {
      type: "html",
      name: "question16",
-     html: "<p style=\"font-weight:bold\">THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n<img src=\"https://www.w3schools.com/images/w3schools_green.jpg\" alt=\"W3Schools.com\" style=\"width:104px;height:142px;\">"
+     html: "<p style=\"font-weight:bold\">THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED.</p>\n"
     }
    ],
    description: "THE FOLLOWING ITEMS ARE TO BE PERFORMED WHILE STANDING UNSUPPORTED."
