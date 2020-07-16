@@ -685,7 +685,6 @@ export class SurveyjsComponent  {
   }
  ],
  showTitle: false,
- showPageNumbers: true,
  showQuestionNumbers: "off",
  clearInvisibleValues: "none",
  requiredText: "",
